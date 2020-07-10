@@ -1,4 +1,20 @@
-### Hi there 👋
+```rust
+#[derive(Debug)]
+struct Person<'twothousandandtwenty> {
+    tag: Vec<&'twothousandandtwenty str>,
+    interests: Vec<&'twothousandandtwenty str>,
+    wish: &'twothousandandtwenty str,
+}
+
+fn main() {
+    let me = Person {
+        tag: vec!["Vimer", "Archer"],
+        interests: vec!["Linux", "Web Novel"],
+        wish: "A 🦀 job",
+    };  
+    println!("{:?}", me);
+}
+```
 
 <!--
 **fortime/fortime** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
